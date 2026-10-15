@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Admin</title>
@@ -7,9 +7,12 @@
 <body class="container mt-4">
 <div class="d-flex justify-content-between">
     <h2>Admin Dashboard</h2>
-    <form th:action="@{/logout}" method="post">
-        <button class="btn btn-outline-secondary">Logout</button>
-    </form>
+    <div>
+        <a class="btn btn-outline-primary" href="/">Home</a>
+        <form th:action="@{/logout}" method="post" class="d-inline">
+            <button class="btn btn-outline-secondary">Logout</button>
+        </form>
+    </div>
 </div>
 
 <h4 class="mt-4">Pending Clinic Requests</h4>
