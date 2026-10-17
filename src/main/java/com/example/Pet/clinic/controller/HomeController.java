@@ -17,7 +17,7 @@ public class HomeController {
         String role = auth.getAuthorities().iterator().next().getAuthority();
         if (role.equals("ROLE_ADMIN")) return "redirect:/admin/home";
         if (role.equals("ROLE_CLINIC")) return "redirect:/clinic/home";
-        return "redirect:/owner/home";
+        return "redirect:/owner/questions/new";
     }
 
 }
